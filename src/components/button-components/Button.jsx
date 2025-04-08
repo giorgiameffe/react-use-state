@@ -6,14 +6,14 @@ import Card from '../Card.jsx';
 
 // Funzione per il singolo bottone
 
-export default function Button({ language, isActive, onToggle }) {
+export default function Button({ language, isActive, onToggle, className }) {
 
     // evento al click del bottone
 
     return (
-        <div className="button-container">
-            <button className='button' onClick={onToggle}>{language.title}</button>
+        <div className="container">
+            <button className={`button ${isActive ? 'button-yellow' : 'button-blue'}`} onClick={onToggle}>{language.title}</button>
             {isActive && <Card title={language.title} description={language.description} />}
         </div>
-    );
+    ); s
 }

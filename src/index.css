@@ -27,19 +27,28 @@ header h1 {
     margin: 0 auto;
 }
 
-/* Buttons */
-
-.button-container {
+.container {
     padding-bottom: 20px;
 }
 
-.button {
+/* Buttons */
+
+.button-blue {
     all: unset;
     padding: 15px;
     background-color: #0d6efd;
     border-radius: 10px;
     color: #ffffff;
-    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.button-yellow {
+    all: unset;
+    padding: 15px;
+    background-color: #ffc107;
+    border-radius: 10px;
+    color: #000000;
     font-weight: bold;
     margin-bottom: 30px;
 }

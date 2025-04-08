@@ -6,12 +6,12 @@ import Button from './Button.jsx';
 
 // Funzione per lista di bottoni 
 
-export default function ButtonsList({ languages }) {
+export default function ButtonsList({ languages, isActive }) {
 
     const [activeButton, setActiveButton] = useState(null);
 
     if (!languages.length) {
-        return <div>Nessun elemento trovato</div>
+        return <div className='not-found'>Nessun elemento trovato</div>
     }
 
     // settare bottone con il valore dell'identificativo su cui ho cliccato 
