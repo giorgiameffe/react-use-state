@@ -10,6 +10,10 @@ export default function ButtonsList({ languages }) {
 
     const [activeButton, setActiveButton] = useState(null);
 
+    if (!languages.length) {
+        return <div>Nessun elemento trovato</div>
+    }
+
     // settare bottone con il valore dell'identificativo su cui ho cliccato 
 
     return (
