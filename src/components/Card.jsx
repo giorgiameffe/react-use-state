@@ -1,9 +1,10 @@
 // Componente Card
 
-export default function Card({ description }) {
+export default function Card({ title, description }) {
 
     return (
-        <div>
+        <div className="card">
+            <h2>{title}</h2>
             <p>{description}</p>
         </div>
     );

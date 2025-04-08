@@ -14,6 +14,8 @@ body {
 
 header h1 {
     margin-bottom: 80px;
+    padding-left: 15px;
+    padding-top: 20px;
 }
 
 /* Main */
@@ -39,4 +41,25 @@ header h1 {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Card */
+
+.card {
+    padding: 30px;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card>h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card>p {
+    line-height: 30px;
+
 }

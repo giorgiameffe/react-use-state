@@ -13,7 +13,7 @@ export default function Button({ language, isActive, onToggle }) {
     return (
         <div className="button-container">
             <button className='button' onClick={onToggle}>{language.title}</button>
-            {isActive && <Card description={language.description} />}
+            {isActive && <Card title={language.title} />}
         </div>
     );
 }
