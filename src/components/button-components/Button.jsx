@@ -11,8 +11,8 @@ export default function Button({ language, isActive, onToggle }) {
     // evento al click del bottone
 
     return (
-        <div className="button">
-            <button onClick={onToggle}>{language.title}</button>
+        <div className="button-container">
+            <button className='button' onClick={onToggle}>{language.title}</button>
             {isActive && <Card description={language.description} />}
         </div>
     );

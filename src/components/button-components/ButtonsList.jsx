@@ -13,7 +13,7 @@ export default function ButtonsList({ languages }) {
     // settare bottone con il valore dell'identificativo su cui ho cliccato 
 
     return (
-        <div className="buttons-list">
+        <div className="buttons-container">
             {languages.map(language => <Button key={language.id}
                 language={language} isActive={activeButton === language.id}
                 onToggle={() => setActiveButton(activeButton === language.id ? null : language.id)} />)}
