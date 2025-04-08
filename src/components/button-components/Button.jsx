@@ -14,10 +14,12 @@ export default function Button({ language }) {
         setIsClicked(prev => !prev);
     }
 
+    // evento al click del bottone
+
     return (
         <div className="button">
             <button onClick={toggle}>{language.title}</button>
-            {isClicked && <Card />}
+            {isClicked && <Card description={language.description} />}
         </div>
     );
 }

@@ -1,8 +1,10 @@
 // Componente Card
 
-export default function Card() {
+export default function Card({ description }) {
 
     return (
-        <div>Sono la card</div>
+        <div>
+            <p>{description}</p>
+        </div>
     );
 }
