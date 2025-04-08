@@ -15,5 +15,5 @@ export default function Button({ language, isActive, onToggle, className }) {
             <button className={`button ${isActive ? 'button-yellow' : 'button-blue'}`} onClick={onToggle}>{language.title}</button>
             {isActive && <Card title={language.title} description={language.description} />}
         </div>
-    ); s
+    );
 }

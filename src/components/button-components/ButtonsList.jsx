@@ -6,7 +6,7 @@ import Button from './Button.jsx';
 
 // Funzione per lista di bottoni 
 
-export default function ButtonsList({ languages, isActive }) {
+export default function ButtonsList({ languages }) {
 
     const [activeButton, setActiveButton] = useState(null);
 
