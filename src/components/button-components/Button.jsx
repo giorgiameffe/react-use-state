@@ -6,20 +6,14 @@ import Card from '../Card.jsx';
 
 // Funzione per il singolo bottone
 
-export default function Button({ language }) {
-
-    const [isClicked, setIsClicked] = useState(false);
-
-    const toggle = () => {
-        setIsClicked(prev => !prev);
-    }
+export default function Button({ language, isActive, onToggle }) {
 
     // evento al click del bottone
 
     return (
         <div className="button">
-            <button onClick={toggle}>{language.title}</button>
-            {isClicked && <Card description={language.description} />}
+            <button onClick={onToggle}>{language.title}</button>
+            {isActive && <Card description={language.description} />}
         </div>
     );
 }
