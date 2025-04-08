@@ -1,4 +1,4 @@
-// Funzione per intestazione della pagina 
+// Componente Header
 
 export default function Header() {
 
