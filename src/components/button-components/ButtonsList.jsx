@@ -1,6 +1,9 @@
+// Use State per generare variabili reattive
 import { useState } from 'react';
 
+// Importazione componente bottone
 import Button from './Button.jsx';
+
 // Funzione per lista di bottoni 
 
 export default function ButtonsList({ languages }) {

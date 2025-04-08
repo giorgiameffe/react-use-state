@@ -1,7 +1,7 @@
 // Use State per generare variabili reattive
 import { useState } from 'react';
 
-// Card
+// Importazione componente Card
 import Card from '../Card.jsx';
 
 // Funzione per il singolo bottone

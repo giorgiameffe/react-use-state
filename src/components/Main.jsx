@@ -1,10 +1,9 @@
 // Array di oggetti 
 import languagesList from '../data/languages.js';
 
-// Bottone
+// Importazione componente lista bottoni
 import ButtonsList from './button-components/ButtonsList.jsx';
 
-import Card from './Card.jsx';
 
 // Componente Main
 
